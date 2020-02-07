@@ -1,0 +1,5 @@
+<!--pages/components/foot/foot.wxml-->
+<view class="F-column div">
+  <view class="FX-c color-103 f-14">{{title}}</view>
+  <text class="textcs color-177 f-14">{{text}}</text>
+</view>

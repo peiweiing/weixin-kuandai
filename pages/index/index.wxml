@@ -1,0 +1,97 @@
+<view class="header bgc-255 color-255">
+    <text></text>
+    <text>首页</text>
+    <text></text>
+  </view>
+<view class="bgc-248">
+  <!-- <view class="topimg por bgc-255">
+    <image src="../../img/sd1.png"></image>
+    <view class="imgcs FX-c">
+      <view class="poa">
+        <view class="FX-c">
+          <image src="../../img/sdx1.png"></image>
+          <image src="../../img/sdx2.png"></image>
+        </view>
+      </view>
+    </view>
+  </view> -->
+  <view class="topimg por bgc-255">
+      <swiper indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+            <image src="{{item.src}}" class="slide-image" width="355" height="150"/>
+          </swiper-item>
+        </block>
+      </swiper>
+    <view class="imgcs FX-c">
+      <view class="poa">
+        <view class="FX-c">
+          <image src="../../img/sdx1.png"></image>
+          <image src="../../img/sdx2.png"></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="main FX-sb bgc-255">
+    <view class="F-column FY-c" wx:for="{{arr}}">
+      <image src="{{item.src}}"></image>
+      <text>{{item.txt}}</text>
+    </view>
+  </view>
+  <view class="toutiao bgc-255">
+    <view class="txtcs color-115 f-bolder">
+    <image src="../../img/ziti.png"></image>
+    </view>
+    <view class="textcs">
+      <view class="FX-sb txt" wx:for="{{brr}}">
+        <view>
+          <text class="t1">{{item.txt}}</text>
+          <text class="t2 color-180">{{item.text}}</text>
+        </view>
+        <text class="t3 color-180">{{item.time}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="module">
+    <view class="div bgc-255">
+      <image src="../../img/xian.png"></image>
+      <text class="text color-38 f-bold">手机号套餐</text>
+    </view>
+    <view class="divcss FX-sb">
+      <view class="divcs bgc-255 FX-sa FY-c boxing" wx:for="{{crr}}">
+        <image src="{{item.src}}"></image>
+        <view class="F-column">
+          <view class="color-38 f-bold">{{item.text}}</view>
+          <text class="t2 color-180 f-nowrap">{{item.txt}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="module2">
+    <view class="div bgc-255">
+      <image src="../../img/xian.png"></image>
+      <text class="text color-38 f-bold">手机专区</text>
+    </view>
+    <view class="divcss FX-sb">
+      <view class="divcs bgc-255 FX-sa FY-c boxing">
+        <image src="../../img/sx3.png"></image>
+        <view class="F-column">
+          <view class="color-38 f-bold">上门回收</view>
+          <text class="t2 color-180 f-nowrap">回收废旧手机</text>
+          <text class="t3 f-nowrap">送话费、维修卡</text>
+        </view>
+      </view>
+      <view class="divcs bgc-255 FX-sa FY-c boxing">
+        <image src="../../img/sx4.png"></image>
+        <view>
+          <view class="color-38 f-bold">上门回收</view>
+          <text class="t2 color-180 f-nowrap">回收废旧手机</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="fot F-xy color-180">
+    通信365
+  </view>
+</view>

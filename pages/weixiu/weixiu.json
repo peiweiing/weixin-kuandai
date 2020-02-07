@@ -1,0 +1,8 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#61D59C",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "维修预约",
+  "backgroundColor": "#ccc",
+  "backgroundTextStyle": "light"
+}

@@ -1,0 +1,93 @@
+<!--pages/money/money.wxml-->
+    <view class="head bgc-122 color-255">
+      <component-head inner-text="靓号详情">
+      </component-head>
+    </view>
+<view class="bgc-245">
+  <view class="bgc122-74 color-255 div1">
+    <view class="FX-c f-30 f-bolder">1561234561</view>
+    <view class="FX-c f-14 div">
+      <text class="txt bgc-122">乌鲁木齐</text>
+      <text class="txt bgc-122">移动</text>
+    </view>
+  </view> 
+  <view class="FX-sa FY-c bgc-106 color-255 div2">
+    <view class="F-column F-xy div">
+      <text class="f-20 color-255">26000.00</text>
+      <text class="f-12 color-2551">价格(元)</text>
+    </view>
+    <text class="xian bgc-2551"></text>
+    <view class="F-column F-xy div">
+      <text class="f-20 color-255">0.00</text>
+      <text class="f-12 color-2551">话费(元)</text>
+    </view>
+  </view>
+  <!-- <view class="swiper-tab FX-c bgc-255">
+    <view class="swiper-tab-item w5 F-xy s1 color-r">59套餐</view>
+    <view class="swiper-tab-item w5 F-xy s2 color-114">99套餐</view>
+  </view>
+  <view class="bgc-255 div3">
+    <view class="f-16">套餐内容</view>
+    <view class="div f-12 FY-c" wx:for="{{crr}}">
+      <text class="t1 bgc-r blocks F-xy"></text>
+      <text class="t2 color-180">{{item.txt}}</text>
+    </view>
+  </view> -->
+  <view class="swiper-tab FX-c bgc-255">
+    <view class='swiperitem {{nowstatus == "productBox" ? "on" : ""}}' bindtap="toViewClick" data-hash="productBox">59套餐</view>
+    <view class='swiperitem {{nowstatus == "commentBox" ? "on" : ""}}' bindtap="toViewClick" data-hash="commentBox">99套餐</view>
+  </view>
+  <scroll-view class="bgc-255 div3"  scroll-into-view="{{toView}}" scroll-y="true" scroll-anchoring="true">
+      <view id="productBox">
+        <view class="f-16">套餐内容</view>
+        <view class="div f-12 FY-c" wx:for="{{crra}}">
+          <text class="t1 bgc-r blocks F-xy"></text>
+          <text class="t2 color-180">{{item.txt}}</text>
+        </view>
+      </view>
+      <view id="commentBox">
+        <view class="f-16">套餐内容</view>
+        <view class="div f-12 FY-c" wx:for="{{crrb}}">
+          <text class="t1 bgc-r blocks F-xy"></text>
+          <text class="t2 color-180">{{item.txt}}</text>
+        </view>
+      </view>
+  </scroll-view>
+  <view class="bgc-255 div4">
+    <view class="f-16">交易流程</view>
+    <view class="FX-sa boxing f-14">
+      <view class="div flex boxing por" wx:for="{{drr}}">
+        <view class="F-column F-xy">
+          <text class="t1 color-r blocks F-xy">{{item.tim}}</text>
+          <text class="f-nowrap">{{item.txt}}</text>
+        </view>
+        <image class="poa" src="{{item.src}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class="bgc-255 f-16 div5">
+    <view class="f-16">交易信息</view>
+    <view class="flex div">
+      <text>办理人</text>
+      <input class="inp" placeholder="请输入办理人电话"></input>
+    </view>
+    <view class="flex div">
+      <text>联系电话</text>
+      <input class="inp" placeholder="请输入联系电话"></input>
+    </view>
+    <view class="flex div">
+      <text>身份证号</text>
+      <input class="inp" placeholder="请输入身份证号"></input>
+    </view>
+    <view class="flex div">
+      <text>配送地址</text>
+      <input class="inp" placeholder="请输入配送地址"></input>
+    </view>
+  </view>
+  <view class="but">
+    <button class="bgc-r color-255 F-xy">预约</button>
+  </view>
+</view>
+<view wx:for="{{foot}}">
+    <component-foot text="{{item.text}}" title="{{item.title}}"></component-foot>
+</view>

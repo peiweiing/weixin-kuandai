@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "component-head": "../components/head/head",
+    "component-foot": "../components/foot/foot"
+  },
+  "navigationBarBackgroundColor": "#FF707A",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "靓号详情",
+  "backgroundColor": "#ccc",
+  "backgroundTextStyle": "light"
+}

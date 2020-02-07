@@ -1,0 +1,158 @@
+html{
+  font-size: 12px;
+}
+
+.color-38{
+  color: rgba(38, 38, 38)
+}
+.color-180{
+  color: rgba(180, 180, 180)
+}
+.color-115{
+  color: rgba(115, 179, 246)
+}
+.bgc-248{
+  background-color: rgba(248, 248, 248);
+}
+.bgc-255{
+  background-color: rgba(255, 255, 255);
+}
+
+
+.topimg{
+ width:100%;
+ height: 230rpx
+}
+.topimg image{
+   /* width: 345px; */
+   width: 92%;
+   height: 230rpx;
+   padding: 0 4%; 
+}
+.topimg .imgcs image{
+  width: 160rpx;
+  height: 50rpx;
+  margin: 0 25rpx;
+}
+.topimg .imgcs .poa{
+  /* bottom: 8rpx; */
+  bottom: 0;
+}
+
+.main image{
+  width: 100rpx;
+  height: 100rpx;
+  margin-bottom: 30rpx;
+}
+.main{
+  padding: 50rpx;
+  margin-bottom: 10rpx;
+}
+.main text{
+  font-size: 14px;
+}
+
+.toutiao{
+  margin-bottom: 10rpx; 
+}
+.toutiao .txtcs{
+  margin: 0 40rpx;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid rgba(214, 214, 214, 0.9);
+}
+.toutiao .txtcs image{
+  width: 120rpx;
+  height: 30rpx;
+}
+.toutiao .textcs{
+  padding: 44rpx 30rpx 14rpx;
+}
+.toutiao .textcs .txt{
+  margin-bottom: 30rpx;
+  font-size: 12px;
+}
+.toutiao .textcs .t1{
+  margin-right: 20rpx;
+}
+
+.module .div{
+  padding: 30rpx;
+}
+.module .div image{
+  width: 4rpx;
+  height: 18rpx;
+}
+.module .div .text{
+  padding-left: 30rpx;
+}
+.module .divcss{
+  margin: 10rpx 0;
+}
+.module .divcs{
+  width: 49%;
+  height: 180rpx;
+  /* padding: 40rpx 60rpx; */
+}
+.module .divcs image{
+  width: 50rpx;
+  height: 70rpx;
+  /* margin-right: 60rpx; */
+}
+.module .divcs .t2{
+  font-size: 12px;
+  margin-top: 10rpx;
+}
+
+
+.module2 .div{
+  padding: 30rpx;
+}
+.module2 .div image{
+  width: 4rpx;
+  height: 18rpx;
+}
+.module2 .div .text{
+  padding-left: 30rpx;
+}
+.module2 .divcss{
+  margin: 10rpx 0;
+}
+.module2 .divcs{
+  width: 49%;
+  height: 180rpx;
+  /* padding: 40rpx 50rpx; */
+}
+.module2 .divcs image{
+  width: 76rpx;
+  height: 64rpx;
+  /* margin-right: 40rpx; */
+}
+.module2 .divcs .t2{
+  font-size: 12px;
+  margin-top: 10rpx;
+}
+.module2 .divcs .t3{
+  font-size: 12px;
+  /* margin-top: 10rpx; */
+  /* padding: 4rpx; */
+  color: rgba(118, 204, 83);
+  border: 1rpx solid rgba(202, 242, 185);
+  margin-bottom: -30rpx;
+}
+
+.fot{
+  padding: 60rpx 0 20rpx;
+}
+
+
+
+
+.header{
+  width: 100%;
+  height: 10vh;
+  padding-top: 20rpx;
+  /* padding: 30rpx 50rpx 40rpx; */
+  display: flex;
+  align-items: center;
+  padding-left: 50rpx;
+}

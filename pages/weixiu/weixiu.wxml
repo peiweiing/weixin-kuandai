@@ -1,0 +1,62 @@
+<!--pages/weixiu/weixiu.wxml-->
+    <view class="header bgc-97 color-255">
+      <text class="arrow" bindtap="goback"></text>
+      <text>维修预约</text>
+      <text></text>
+    </view>
+<view class="bgc-245">
+  <view class="bgc-97-81 FX-sa div1">
+    <view class="F-column FY-c" wx:for="{{arr}}">
+      <image src="{{item.src}}"></image>
+      <text class="color-255 f-14">{{item.txt}}</text>
+    </view>
+  </view>
+  <view class="F-wrap boxing bgc-255 div2">
+    <view class="{{index == idx?'F-xy boxing color-255 bgc-91 div':'F-xy boxing bgc-245 div'}}" bindtap='chooseThis' data-index='{{index}}' wx:for="{{brr}}">
+      <image src="{{index == idx ?item.srcc:item.src}}"></image>
+      <text class="f-12">{{item.txt}}</text>
+    </view> 
+  </view>
+  <view class="bgc-255 div3">
+    <view class="f-16">宽带套餐内容</view>
+    <view class="div f-16 FY-c" wx:for="{{crr}}">
+      <text class="t1 bgc-g color-255 blocks F-xy">{{item.tim}}</text>
+      <text class="t2 color-180">{{item.txt}}</text>
+    </view>
+  </view>
+  <view class="bgc-255 div4">
+    <view class="f-16">交易流程</view>
+    <view class="FX-sa boxing">
+      <view class="div flex boxing por" wx:for="{{drr}}">
+        <view class="F-column F-xy">
+          <text class="t1 color-g blocks F-xy">{{item.tim}}</text>
+          <text class="f-nowrap">{{item.txt}}</text>
+        </view>
+        <image class="poa" src="{{item.src}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class="bgc-255 f-16 div5">
+    <view class="f-16">具体信息</view>
+    <view class="flex div">
+      <text>维修信息</text>
+      <input class="inp" placeholder="请输入设备品牌型号"></input>
+    </view>
+    <view class="flex div">
+      <text>服务地址</text>
+      <input class="inp" placeholder="请输入服务地址"></input>
+    </view>
+    <view class="flex div">
+      <text>手机号码</text>
+      <input class="inp" placeholder="请输入联系电话"></input>
+    </view>
+    <view class="flex div">
+      <text>上门时间</text>
+      <input class="inp" placeholder="" value="2019/10/02  10：00"></input>
+    </view>
+  </view>
+  <view class="but">
+    <button class="bgc-76 color-255 F-xy">立即预约</button>
+  </view>
+</view>
+

@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "component-tag-name": "../components/head/head"
+    },
+  "navigationBarBackgroundColor": "#62AFFF",
+  "navigationBarTextStyle": "white",
+  "navigationBarTitleText": "资费详情",
+  "backgroundColor": "#ccc",
+  "backgroundTextStyle": "light"
+}

@@ -1,0 +1,84 @@
+<!--pages/money/money.wxml-->
+    <view class="header bgc-98 color-255">
+      <text class="arrow" bindtap="goback"></text>
+      <text>资费详情</text>
+      <text></text>
+    </view>
+<view class="bgc-245">
+  <view class="bgc-98-27 FX-sa div1">
+    <view class="F-column" bindtap='chooseThis' data-index='{{index}}' wx:for="{{arr}}" wx:key="arr">
+      <image class="{{index == idx?'bgc-255':'bgc-91'}}" src="{{index == idx ?item.src:item.srcc}}"></image>
+      <text class="color-255" class="{{index == idx?'color-255':'color-170'}}">{{item.txt}}</text>
+    </view>
+    <!-- <view class="F-column">
+      <image src="../../img/z1.png"></image>
+      <text class="color-170">电信宽带</text>
+    </view>
+    <view class="F-column">
+      <image src="../../img/z1.png"></image>
+      <text class="color-170">电信宽带</text>
+    </view> -->
+  </view>
+  <view class="F-wrap boxing bgc-255 div2 por">
+    <view class="{{index==indx?'F-xy boxing w3 color-255 bgc-b div':'F-xy boxing w3 bgc-245 div'}}" bindtap='goIndex' data-index="{{index}}" wx:for="{{brr}}" wx:key="brr">
+      <text class="">{{item.txt}}</text>
+    </view> 
+  </view>
+
+  <view class="bgc-255 div3">
+    <view class="f-18">宽带套餐内容</view>
+    <view class="div f-16 FY-c" wx:for="{{crr}}">
+      <text class="t1 bgc-b color-255 blocks F-xy">{{item.tim}}</text>
+      <text class="t2 color-180">{{item.txt}}</text>
+    </view>
+  </view>
+  <view class="bgc-255 div4">
+    <view class="f-18">交易流程</view>
+    <view class="FX-sa boxing">
+      <view class="div flex boxing por" wx:for="{{drr}}">
+        <view class="F-column F-xy">
+          <text class="t1 color-b blocks F-xy">{{item.tim}}</text>
+          <text class="f-nowrap">{{item.txt}}</text>
+        </view>
+        <image class="poa" src="{{item.src}}"></image>
+      </view>
+    </view>
+  </view>
+  <view class="bgc-255 f-16 div5">
+    <view class="f-18">安装地址</view>
+    <view class="FX-sb div">
+      <view>新疆省 乌鲁木齐市</view>
+      <text class="color-180 sss">v</text>
+    </view>
+    <input class="color-189" placeholder="请输入服务地址"></input>
+    <view class="flex div">
+      <text>客户姓名</text>
+      <input class="inp" placeholder="请输入姓名"></input>
+    </view>
+    <view class="flex div">
+      <text>手机号码</text>
+      <input class="inp" placeholder="请输入号码"></input>
+    </view>
+  </view>
+  <view class="bgc-255 div6">
+    <view class="f-bold f-18">费用</view>
+    <view class="divcs f-16 color-180">
+      <view class="div">
+        <text class="dian blocks bgc-b"></text>
+        <text>预存话费200元</text>
+      </view>
+      <view class="div">
+        <text class="dian blocks bgc-b"></text>
+        <text>调测费200元</text>
+      </view>
+      <view class="div">
+        <text class="dian blocks bgc-b"></text>
+        <text>共计：400元</text>
+      </view>
+    </view>
+  </view>
+  <view class="but">
+    <button class="bgc-b color-255 F-xy">立即预约</button>
+  </view>
+</view>
+

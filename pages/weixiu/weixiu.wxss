@@ -1,0 +1,174 @@
+/* pages/weixiu/weixiu.wxss */
+
+.color-255{
+  color: rgb(255, 255, 255)
+}
+.color-180{
+  color: rgba(180, 180, 180)
+}
+.color-b{
+  color: rgba(75, 163, 254)
+}
+.color-g{
+  color:rgba(87, 205, 139);
+}
+.bgc-255{
+  background-color: rgba(255, 255, 255)
+}
+.bgc-245{
+  background-color: rgba(245, 247, 246)
+}
+.bgc-76{
+  background-color: rgba(76, 198, 123);
+}
+.bgc-b{
+  background-color: rgba(75, 163, 254);
+}
+.bgc-g{
+  background-color:rgba(87, 205, 139);
+}
+.bgc-97{
+  background-color: rgba(97, 213, 156);
+}
+.bgc-91{
+  background-color: rgba(91, 209, 146);
+}
+.bgc-97-81{
+  background-image: linear-gradient(rgba(97,213,156), rgba(81,201,131));
+}
+.f-12{
+  font-size: 12px;
+}
+.f-14{
+  font-size: 14px;
+}
+.f-16{
+  font-size: 16px;
+}
+.f-18{
+  font-size: 18px;
+}
+
+
+.div1{
+  /* padding: 40rpx 0; */
+  padding-bottom: 40rpx;
+}
+.div1 image{
+  width: 88rpx;
+  height: 88rpx;
+  margin-bottom: 20rpx;
+}
+
+.div2{
+  padding: 40rpx;
+  margin-bottom: 10rpx;
+  align-content: space-around;
+}
+.div2 image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+.div2 .div{
+  /* width: 200r  px; */
+  height: 80rpx;
+  border-radius: 20rpx;
+  margin: 8rpx;
+  width: 30%;
+}
+
+.div3{
+  padding: 50rpx 60rpx;
+  margin-bottom: 10rpx;
+}
+.div3 .div{
+  margin-top: 50rpx;
+}
+.div3 .t1{
+  border-radius: 50%;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 30rpx;
+}
+
+
+.div4{
+  padding: 50rpx;
+  margin-bottom: 10rpx;
+}
+.div4 .div{
+  margin-top:80rpx;
+}
+.div4 .div image{
+  width: 100rpx;
+  height: 30rpx;
+  right: -45%;
+  top: 5%;
+}
+.div4 .div .t1{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  border: 1px solid rgba(87, 205, 139);
+  margin-bottom: 60rpx;
+}
+
+.div5{
+  padding: 50rpx;
+  margin-bottom: 10rpx;
+}
+.div5 .div{
+  margin: 80rpx 0;
+}
+.div5 .div .inp{
+  margin-left: 50rpx;
+}
+.div5 .div .sss{
+  transform: scale(1.6,0.8);
+}
+.div5 .inp::-webkit-input-placeholder {
+  color: rgba(204, 204, 204, 0.2);
+}
+.div5 .inp::-moz-input-placeholder {
+  color: rgba(204, 204, 204, 0.2);
+}
+.div5 .inp::-ms-input-placeholder {
+  color: rgba(204, 204, 204, 0.2);
+}
+
+
+.but{
+  width: 100%;
+  height: 100rpx;
+  padding: 80rpx 0;
+}
+.but button{
+  width: 100%!important;
+  height: 100rpx;
+}
+
+
+
+
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 10vh;
+  padding-top: 20rpx;
+  /* padding: 30rpx 50rpx 40rpx; */
+  display: flex;
+  align-items: center;
+  padding-left: 50rpx;
+}
+
+.arrow{
+  width: 25rpx;
+  height:25rpx;
+  margin-right: 10rpx;
+  border-left: 4rpx solid #fff;
+  border-top: 4rpx solid #fff;
+  transform: rotate(-45deg);
+}
